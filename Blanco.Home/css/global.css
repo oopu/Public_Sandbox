@@ -1,13 +1,32 @@
-﻿/* ------- global styles ---- */
+/* ------- global styles ---- */
+
+/* Color guide
+*
+* highlight grey: rgb(206, 220, 231)
+* visited grey: rgb(92, 99, 103)
+* trim blue: rgb(139, 193, 235)
+* standard text: rgb(61, 85, 103)
+* inverse text: rgb(161, 171, 180)
+* inverse visited: black;
+*/
+html{ background-color: #596A72; }
 body{
 	margin: 0;
-	background: black;
-	font-family: Palatino, "Palatino Linotype", Palladio, "URW Palladio", serif
+	padding: 2em;
+	font-family: Monaco, Consolas, “Lucida Console”, monospace !important;
+	
+	background: #cedce7; /* Old browsers */
+	background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cedce7 0%,#596a72 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cedce7 0%,#596a72 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cedce7 0%,#596a72 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #cedce7 0%,#596a72 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
 }
 
-header{
-	text-align: center;
-	color: rgb(210, 210, 210);
+h1, h2, h3{
+	color: rgb(61, 85, 103);
 }
 
 nav{
@@ -16,10 +35,11 @@ nav{
 	left: 0%;
 	width: 15em;
 	padding: 1em;
-	background-color: rgba(30, 30, 40, 0.75);
+	background-color: rgba(56, 59, 62, 0.75);
 	border-width: 1px 1px 1px 0;
 	border-style: solid;
-	border-color: rgb(210, 210, 210);
+	border-color: rgb(92, 99, 103);
+	border-radius: 0px 15px 15px 0px;
 	z-index: 100;
 }
 
@@ -31,30 +51,36 @@ nav ul{
 nav ul li{
 	border-width: 0 0 1px 0;
 	border-style: solid;
-	border-color: black;
+	border-color: rgb(206, 220, 231);
 	padding: 0.5em 0;
 }
-nav ul li a{
+
+a{
 	font-size: 1.25em;
 }
-nav ul li a:link{
-	color: white;
+a:link{
+	color: rgb(206, 220, 231);
 }
-nav ul li a:visited{
-	color: rgb(175, 175, 175);
+a:link:hover, a:focus{
+	/*color: white;*/
+	color: rgb(139, 193, 235);
 }
-nav ul li a:link:hover, nav ul li a:visited:hover, nav ul li a:focus{
-	color: white;
+a:visited{
+	color: black;
+}
+a:visited:hover, a:visited:focus{
+	/*color: rgb(206, 220, 231);*/
+	color: rgb(139, 193, 235);
 }
 nav ul li p{
 	margin: 0.5em 0 0em 0.5em;
-	color: rgb(210, 210, 210);
+	color: rgb(206, 220, 231);
 	font-style: italic;
 }
 nav ul li i{
 	margin-right: 1em;
+	color: rgb(206, 220, 231);
 }
-
 
 main{
 	width: 70%;
@@ -74,7 +100,16 @@ main{
 footer{
 	text-align: center;
 	margin: 5em auto 0.5em;
-	color: rgb(210, 210, 210);
+	color: rgb(206, 220, 231);
 	font-size: 0.8em;
 	font-style: italic;
 }
+
+/*------- Generic effects ---------*/
+.hoverShadow{ box-shadow: 3px 5px 20px 0px black; }
+.insetShadow{ box-shadow: inset 0px 0px 20px 0px black; margin: 1em;}
+.insetShadow-highlight{ box-shadow: inset 0px 0px 20px 0px rgb(206, 220, 231); }
+.rounded{ border-radius: 15px; }
+.padded{ padding: 1.3em; }
+.h-padded{ padding: 0 1.3em; }
+.v-padded{ padding: 1.3em 0; }
