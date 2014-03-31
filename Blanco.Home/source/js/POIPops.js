@@ -14,24 +14,24 @@
 		//Ensure no popups are visible
 		hidePopups();
 		
-		$(event.target)
-			.css({
-				"color": "rgb(200, 16, 46)",
-				"background-color": "rgb(29, 37, 45)"
-			})
+		$(event.currentTarget)
+			.removeClass("anim-driftV")
+			.removeClass("anim-driftV-offset")
+			.children("i").eq(0).removeClass("fa-circle-o").addClass("fa-dot-circle-o");
+		$(event.currentTarget)
 			.children(".POIContent")
-				.css({
-					"width": ($(event.target).children(".POIContent").text().length / 4) + "em"
-				})
-				.attr("aria-hidden", "false")
-				.fadeIn(function (){
-					
-					$(document)
-						.keydown(function (event){
-							if(event.keyCode == 27){ hidePopups(true); }
-						})
-						.click(hidePopups);
-				});
+			.css({
+				"width": ($(event.currentTarget).children(".POIContent").text().length / 4) + "em"
+			})
+			.attr("aria-hidden", "false")
+			.fadeIn(function (){
+				
+				$(document)
+					.keydown(function (event){
+						if(event.keyCode == 27){ hidePopups(true); }
+					})
+					.click(hidePopups);
+			});
 				
 	
 	};

@@ -14,6 +14,8 @@
 			#dot-Bitbucket{ top: 32%; left: 59%; }
 			#dot-flickr{ top: 55%; left: 63%; }
 			#dot-LinkedIn{ top: 85%; left: 60%; }			
+			
+			/*---- TBD: media queries for screen width for this page ----*/
 		</style>
 	</head>
 	<body>
@@ -43,21 +45,33 @@
 			<section class="pure-u-1-2">
 				<h2>Blanco.Map</h2>
 				<div class="imgContainer padded insetShadow rounded">
-					<div id="dot-GitHub" class="POIPop hoverShadow" aria-haspopup="true">
-						<a href="https://github.com/oopu/Public_Sandbox"><i class="fa fa-circle-o"></i> GitHub</a>
-						<p>For my HTML5 sandboxing</p>
+					<div id="dot-GitHub" class="POIDot hoverShadow anim-driftV" aria-haspopup="true">
+						<i class="fa fa-circle-o fa-lg"></i>
+						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
+							<a href="https://github.com/oopu/Public_Sandbox"><i class="fa fa-github"></i>GitHub</a>
+							<p>For my HTML5 sandboxing</p>
+						</div>
 					</div>
-					<div id="dot-Bitbucket" class="POIPop hoverShadow" aria-haspopup="true">
-						<a href="https://bitbucket.org/TehBlanco/public-demos"><i class="fa fa-circle-o"></i> Bitbucket</a>
-						<p>For my ActionScript 3.0 sandboxing</p>
+					<div id="dot-Bitbucket" class="POIDot hoverShadow anim-driftV-offset" aria-haspopup="true">
+						<i class="fa fa-circle-o fa-lg"></i> 
+						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
+							<a href="https://bitbucket.org/TehBlanco/public-demos"><i class="fa fa-bitbucket"></i>Bitbucket</a>
+							<p>For my ActionScript 3.0 sandboxing</p>
+						</div>
 					</div>
-					<div id="dot-flickr" class="POIPop hoverShadow" aria-haspopup="true">
-						<a href="http://www.flickr.com/photos/chrisbfish"><i class="fa fa-circle-o"></i> Flickr</a>
-						<p>For some photography</p>
+					<div id="dot-flickr" class="POIDot hoverShadow anim-driftV" aria-haspopup="true">
+						<i class="fa fa-circle-o fa-lg"></i> 
+						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
+							<a href="http://www.flickr.com/photos/chrisbfish"><i class="fa fa-flickr"></i>Flickr</a>
+							<p>For some photography</p>
+						</div>
 					</div>
-					<div id="dot-LinkedIn" class="POIPop hoverShadow" aria-haspopup="true">
-						<a href="http://www.linkedin.com/pub/christopher-blanco/18/44a/332/"><i class="fa fa-circle-o"></i> LinkedIn</a>
-						<p>For more work history and contact info</p>
+					<div id="dot-LinkedIn" class="POIDot hoverShadow anim-driftV-offset" aria-haspopup="true">
+						<i class="fa fa-circle-o fa-lg"></i>
+						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
+							<a href="http://www.linkedin.com/pub/christopher-blanco/18/44a/332/"><i class="fa fa-linkedin"></i>LinkedIn</a>
+							<p>For more work history and contact info</p>
+						</div>
 					</div>
 					<img src="img/selfBig.png" alt="A self portrait of Chris Blanco"/>
 				</div>
@@ -79,5 +93,8 @@
 		<footer>
 			<p>Webpage designed, built, and all the things by <a href="mailto:nowucblanco@gmail.com">Chris Blanco</a>, &copy 2014. Uses <a href="//www.jquery.com">jQuery</a> and <a href="//purecss.io">Pure</a>.</p>
 		</footer>
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><![endif]-->
+		<!--[if gte IE 9]><!--><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!--<![endif]-->
+		<script src="js/POIPops.js"></script>
 	</body>	
 </html>

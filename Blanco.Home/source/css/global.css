@@ -113,3 +113,20 @@ footer{
 .padded{ padding: 1.3em; }
 .h-padded{ padding: 0 1.3em; }
 .v-padded{ padding: 1.3em 0; }
+
+/*------- Animated effects ---------*/
+
+.anim-driftV-offset{
+	-webkit-animation: driftVFrames 5000ms ease-in 500ms infinite;
+}
+
+.anim-driftV{
+	-webkit-animation: driftVFrames 5000ms ease-in 0 infinite;
+}
+
+@-webkit-keyframes driftVFrames
+{
+	25%{ -webkit-transform: translateY(-4px); }
+	75%{ -webkit-transform: translateY(8px); }
+	100%{ -webkit-transform: translateY(0px); }
+}
