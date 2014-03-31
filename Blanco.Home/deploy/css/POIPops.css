@@ -1,0 +1,31 @@
+﻿/** CSS for the POIDots widget **/
+/* Make sure you specify specific positions for each dot by setting top/left or bottom/right on ID'd POIDot instances! */
+
+.POIDot
+{
+	position: absolute;
+	padding: 0.25em;
+	border-radius: 1em;
+	background-color: rgb(206, 220, 231);
+	cursor: pointer;
+}
+.POIDot:hover, .POIDot:focus { color: rgb(29, 37, 45); }
+
+
+/* Inherits the parent's position */
+.POIContent
+{
+	display: none; /*is faded-in via mouse-click on an associated POIDot with jQuery*/
+	position: absolute;
+	margin: -1.5em -0.25em;
+	color: rgb(61, 85, 103);
+	font-size: 1em;
+	font-weight: normal;
+	background-color: rgb(206, 220, 231);
+	z-index: 2; /* Note that because it's a descendant of .POIDot, it will always be under other POIDots.*/
+}
+.POIContent i {
+	margin-right: 1em;
+	color: rgb(61, 85, 103);
+}
+.POIContent p { font-style: italic; }
