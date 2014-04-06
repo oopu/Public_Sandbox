@@ -9,11 +9,16 @@
 * inverse text: rgb(161, 171, 180)
 * inverse visited: black;
 */
+/* Using my own fonts with purecss:*/
+html, button, input, select, textarea, 
+	.pure-g [class *= "pure-u"],
+	.pure-g-r [class *= "pure-u"]{
+		font-family: Monaco, Consolas, “Lucida Console”, monospace, sans serif; /*Note that sans serif is used for section paragraphs.*/
+	}
 html{ background-color: #596A72; }
 body{
 	margin: 0;
 	padding: 2em;
-	font-family: Monaco, Consolas, “Lucida Console”, monospace !important;
 	
 	background: #cedce7; /* Old browsers */
 	background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%); /* FF3.6+ */
@@ -86,6 +91,8 @@ main{
 	width: 70%;
 	margin: 0 auto;
 }
+
+section p{ font-family: sans-serif; }
 
 .imgContainer{
 	position: relative;
