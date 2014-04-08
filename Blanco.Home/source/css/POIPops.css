@@ -9,7 +9,7 @@
 	background-color: rgb(206, 220, 231);
 	cursor: pointer;
 }
-.POIDot:hover, .POIDot:focus { color: rgb(29, 37, 45); }
+.POIDot:hover, .POIDot:focus { background-color: rgb(139, 193, 235); }
 
 
 /* Inherits the parent's position */

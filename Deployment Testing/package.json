@@ -1,0 +1,23 @@
+{
+  "name": "Deployment_Testing",
+  "version": "0.0.0",
+  "description": "Sandbox for testing Grunt tasks related to project deployment",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "training-templates"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-contrib-uglify": "^0.3.2",
+    "grunt-ftp-deploy": "^0.1.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.8.0",
+    "grunt-replace": "^0.6.2"
+  },
+  "deployServer": "//storage.googleapis.com/feye-assets/",
+  "author": "Chris Blanco",
+  "license": "ISC"
+}

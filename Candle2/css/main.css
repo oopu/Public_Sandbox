@@ -1,0 +1,16 @@
+/* CSS for my little test. */
+
+body
+{
+	background-color: rgb(30, 30, 30);
+}
+
+.live
+{
+	max-width: 61.75em;
+}
+
+#inputArea
+{
+	margin-left: 50%; /* y u no do nuttin? */
+}

@@ -1,0 +1,27 @@
+/* CSS for my little test. */
+
+body
+{
+	background-color: rgb(30, 30, 30);
+}
+
+.live
+{
+	max-width: 61.75em;
+}
+
+.candleBase
+{
+	float: bottom;
+	margin-left: 265px;
+}
+
+.emitter
+{
+	width: 20px;
+	height: 20px;
+	background-color: rgba( 50, 50, 50, 0);
+	float: bottom;
+	margin-left: 50%;
+	margin-top: 350px;
+}
