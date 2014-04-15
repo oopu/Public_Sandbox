@@ -55,7 +55,7 @@
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -107,8 +107,8 @@
 						"selection":
 						[
 							[
-								3699,
-								3699
+								6679,
+								6679
 							]
 						],
 						"settings":
@@ -117,7 +117,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 195.0,
+						"translation.y": 1658.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -193,7 +193,7 @@
 	"project": "project.sublime-project",
 	"replace":
 	{
-		"height": 80.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -226,7 +226,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 188.0,
 	"status_bar_visible": true,
 	"template_settings":
