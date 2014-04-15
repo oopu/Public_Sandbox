@@ -9,8 +9,11 @@
 	background-color: rgb(206, 220, 231);
 	cursor: pointer;
 }
-.POIDot:hover, .POIDot:focus { color: rgb(29, 37, 45); }
-
+.POIDot:hover, .POIDot:focus { background-color: rgb(139, 193, 235); }
+.POIDot a:link{ color: rgb(61, 84, 103);}
+.POIDot a:link:hover, a:focus{ color: rgb(139, 193, 235); }
+.POIDot a:visited{ color: black; }
+.POIDot a:visited:hover, .POIDot a:visited:focus{ color: rgb(139, 193, 235); }
 
 /* Inherits the parent's position */
 .POIContent

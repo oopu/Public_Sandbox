@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Blanco.Home</title>
-		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="//yui.yahooapis.com/pure/0.4.2/grids-min.css"> <!-- concat later into global.css -->
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"> <!-- concat later into global.css -->
-		<link rel="stylesheet" href="css/global.css"/>
-		<link rel="stylesheet" href="css/POIPops.css"/>
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/pure-0.4.2-grids.min.css"> <!-- concat later into global.min.css -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- concat later into global.min.css -->
+		<link rel="stylesheet" href="css/global.min.css"/>
+		<link rel="stylesheet" href="css/POIPops.min.css"/>
 		<style>
 			/* Positions for POIPops */
 			#dot-GitHub{ top: 27%; left: 55%; }
@@ -24,77 +24,76 @@
 		<nav class="hoverShadow">
 			<ul>
 				<li>
-					<a href="https://github.com/oopu/Public_Sandbox"><i class="fa fa-github"></i>GitHub</a>
+					<a href="//github.com/oopu/Public_Sandbox"><i class="fa fa-github"></i>GitHub</a>
 					<p>For my HTML5 sandboxing</p>
 				</li>
 				<li>
-					<a href="https://bitbucket.org/TehBlanco/public-demos"><i class="fa fa-bitbucket"></i>Bitbucket</a>
+					<a href="//bitbucket.org/TehBlanco/public-demos"><i class="fa fa-bitbucket"></i>Bitbucket</a>
 					<p>For my ActionScript 3.0 sandboxing</p>
 				</li>
 				<li>
-					<a href="http://www.flickr.com/photos/chrisbfish"><i class="fa fa-flickr"></i>Flickr</a>
+					<a href="//www.flickr.com/photos/chrisbfish"><i class="fa fa-flickr"></i>Flickr</a>
 					<p>For some photography</p>
 				</li>
 				<li>
-					<a href="http://www.linkedin.com/pub/christopher-blanco/18/44a/332/"><i class="fa fa-linkedin"></i>LinkedIn</a>
+					<a href="//www.linkedin.com/pub/christopher-blanco/18/44a/332/"><i class="fa fa-linkedin"></i>LinkedIn</a>
 					<p>For more work history and contact info</p>
 				</li>
 			</ul>
 		</nav>
 		<main class="pure-g-r">
-			<section class="pure-u-1-2">
+			<section class="pure-u-1-2 pure-hidden-phone">
 				<h2>Blanco.Map</h2>
 				<div class="imgContainer padded insetShadow rounded">
-					<div id="dot-GitHub" class="POIDot hoverShadow anim-driftV" aria-haspopup="true">
+					<div id="dot-GitHub" class="POIDot hoverShadow anim-driftV" role="button" aria-haspopup="true">
 						<i class="fa fa-circle-o fa-lg"></i>
 						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
-							<a href="https://github.com/oopu/Public_Sandbox"><i class="fa fa-github"></i>GitHub</a>
+							<a href="//github.com/oopu/Public_Sandbox"><i class="fa fa-github"></i>GitHub</a>
 							<p>For my HTML5 sandboxing</p>
 						</div>
 					</div>
-					<div id="dot-Bitbucket" class="POIDot hoverShadow anim-driftV-offset" aria-haspopup="true">
+					<div id="dot-Bitbucket" class="POIDot hoverShadow anim-driftV-offset" role="button" aria-haspopup="true">
 						<i class="fa fa-circle-o fa-lg"></i> 
 						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
-							<a href="https://bitbucket.org/TehBlanco/public-demos"><i class="fa fa-bitbucket"></i>Bitbucket</a>
+							<a href="//bitbucket.org/TehBlanco/public-demos"><i class="fa fa-bitbucket"></i>Bitbucket</a>
 							<p>For my ActionScript 3.0 sandboxing</p>
 						</div>
 					</div>
-					<div id="dot-flickr" class="POIDot hoverShadow anim-driftV" aria-haspopup="true">
+					<div id="dot-flickr" class="POIDot hoverShadow anim-driftV" role="button" aria-haspopup="true">
 						<i class="fa fa-circle-o fa-lg"></i> 
 						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
-							<a href="http://www.flickr.com/photos/chrisbfish"><i class="fa fa-flickr"></i>Flickr</a>
+							<a href="//www.flickr.com/photos/chrisbfish"><i class="fa fa-flickr"></i>Flickr</a>
 							<p>For some photography</p>
 						</div>
 					</div>
-					<div id="dot-LinkedIn" class="POIDot hoverShadow anim-driftV-offset" aria-haspopup="true">
+					<div id="dot-LinkedIn" class="POIDot hoverShadow anim-driftV-offset" role="button" aria-haspopup="true">
 						<i class="fa fa-circle-o fa-lg"></i>
 						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
-							<a href="http://www.linkedin.com/pub/christopher-blanco/18/44a/332/"><i class="fa fa-linkedin"></i>LinkedIn</a>
+							<a href="//www.linkedin.com/pub/christopher-blanco/18/44a/332/"><i class="fa fa-linkedin"></i>LinkedIn</a>
 							<p>For more work history and contact info</p>
 						</div>
 					</div>
-					<img src="img/selfBig.png" alt="A self portrait of Chris Blanco"/>
+					<img src="img/self.jpg" alt="A self portrait of Chris Blanco"/>
 				</div>
 			</section>
 			<section class="pure-u-1-2">
 				<h2>Blanco.README</h2>
 				<div class="padded insetShadow rounded">
-					<p>O hi. You have found my little webpage.</p>
-					<p>It isn't much, and it sure doesn't cover everything that I've worked on, but I've placed here a few different things which I hope you'll find interesting.</p>
+					<p>O hi. You have found my webpage. I've placed here a few different things which I hope you'll find interesting.</p>
 					<h3>About Me</h3>
-					<p>I'm a front-end developer that was finally feeling awesome about his Actionscript 3.0 skills in the heyday of Flash social games when Apple decided to start flipping tables. I've since picked up the latest in HTML5 technologies and have been running with it since the summer of 2013. It definitely doesn't make me the most experienced web dev out there, but I know that I bring a lot more to the table than most web devs do.</p>
-					<p>I graduated from Santa Clara University in 2010 with a B.S. in Computer Engineering and a minor in Studio Art, concentrating specifically in video game development and digital art, respectively. I immediately became a co-founder of Red Seraphim, a social-gaming startup that was trying to make the field more interesting by giving people a cross-platform game that had more depth than most games available. Despite joining on as a Flash developer, I quickly was given the responsibility to not only lead development efforts of our Flash client, but to act as Senior Producer for the efforts of the company as a whole. We may not have been successful, but at our height I had 8 direct reports, was mentoring some of the more junior developers in the finer points of object-oriented design and software engineering, and helping guide the CEO's thoughts on the design and direction in which he was taking the project. It was a massive undertaking, a difficult two years, and the most thrilling experience of my life. I may have difficulty defining for people what I find to be my best traits, but I have no problem in naming my role at Red Seraphim as the best job in my life so far.</p>
-					<p>In my time since, I've been working as the primary developer in an E-Learning team in FireEye, teaching people about malware threats and how to get our products ready to defend your network. While the level of technical depth in my projects has diminished slightly, I have enjoyed the new challenges brought forth when instruction becomes the goal of the project as opposed to the first moments that tend to be inserted as an afterthought. It is also cool to be able to work with industry thought-leaders and create better products than have been ever seen before in the industry. My only complaint is not having the manpower to go back to my roots and develop more immersive and engaging experience.</p>
+					<p>I'm a front-end developer that was finally feeling awesome about his Actionscript 3.0 skills in the heyday of Flash social games when Apple decided to start stirring the pot. I've since picked up the latest in HTML5 technologies and have been running with it since the summer of 2013. When you hire me, you get not only a highly talented software engineer, but someone with great design skills, strong people skills, management and startup experience. I have always found ways to accomplished more than the tasks at hand, and I will flourish in a role that has room for such growth.</p>
+					<p>I graduated from Santa Clara University in 2010 with a B.S. in Computer Engineering and a minor in Studio Art, concentrating specifically in video game development and digital art, respectively. I immediately became a co-founder of Red Seraphim, a social-gaming startup that was trying to make the field more interesting by giving people a cross-platform game that had more depth than most games available. Despite joining on as a Flash developer, I quickly was given the responsibility to not only lead development efforts of our Flash client, but to act as Senior Producer for the efforts of the company as a whole. At our height I had 8 direct reports, was mentoring some of the more junior developers in the finer points of object-oriented design and software engineering, and helping guide the CEO's thoughts on the design and direction in which he was taking the project. It was a massive undertaking, a difficult two years, and the most thrilling experience of my professional career so far. It was an excellent opportunity for me to apply my versatility.</p>
+					<p>In my time since, I've been working as the primary developer in an E-Learning team in FireEye, teaching people about malware threats and how to get our products ready to defend your network. I have enjoyed the new challenges brought forth when instruction becomes the goal of the project as opposed to the first moments that tend to be inserted as an afterthought in many webapps. It is also cool to be able to work with industry thought-leaders and create better products than have been ever seen before in training. The rapid growth of the company has brought many challenges to development, but my natural inclination for good software design has enabled rapid development with consistent deliveries, and I'm always striving to improve workflow even further.</p>
 					<p>Anyway, that's the overview. If you want to see some more of the stuff I've done, check out the links on this page. I also am a fan of human interaction, so if you would like to get in touch, <a href="mailto:nowucblanco@gmail.com">contact me via email</a> or check out my LinkedIn page and leave me a message there.</p>
 				</div>
 				
 			</section>
 		</main>
 		<footer>
-			<p>Webpage designed, built, and all the things by <a href="mailto:nowucblanco@gmail.com">Chris Blanco</a>, &copy 2014. Uses <a href="//www.jquery.com">jQuery</a> and <a href="//purecss.io">Pure</a>.</p>
+			<p>Webpage designed, built, and all the things by <a href="mailto:nowucblanco@gmail.com">Chris Blanco</a>, &copy 2014. Uses <a href="//jquery.com">jQuery</a> and <a href="//purecss.io">Pure</a>.</p>
 		</footer>
 		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><![endif]-->
 		<!--[if gte IE 9]><!--><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!--<![endif]-->
-		<script src="js/POIPops.js"></script>
+		<script src="js/POIPops.min.js"></script>
 	</body>	
 </html>

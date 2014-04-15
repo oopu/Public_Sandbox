@@ -1,0 +1,23 @@
+{
+  "name": "Blanco.Home",
+  "version": "0.0.0",
+  "description": "Personal website with links to portfolios.",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oopu/Public_Sandbox"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-contrib-uglify": "^0.3.2",
+    "grunt-ftp-deploy": "^0.1.1",
+    "grunt-contrib-cssmin": "^0.8.0",
+    "grunt-replace": "^0.6.2",
+    "grunt-contrib-imagemin": "^0.6.1"
+  },
+  "deployServer": "TBD",
+  "author": "Chris Blanco",
+  "license": "ISC"
+}

@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>sideQuiz Testing Grounds</title>
+		<link rel="stylesheet" href="http://edusvcs.fireeye.com/css/global.css">
+		<link rel="stylesheet" href="sideQuiz.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<h1>sideQuiz Demo</h1>
+		<main>
+			<p>A slice of heaven. On the piss, this crook housie is as hard case as a kiwi as Undie 500. Mean while, in the marae, Lomu and Jim Hickey were up to no good with a bunch of hard yakka hangis. The heaps good force of his boiling-up was on par with Spot, the Telecom dog's cool Tui. Au, don't be a egg. Put the jug on will you bro, all these pretty suss twinks can wait till later. The first prize for rooting goes to... Hercules Morse, as big as a horse and his choice Longest Drink in Town, what a dole bludger.</p>
+			<p>Bro, Monopoly money, from the New Zealand version with Queen Street and stuff are really mint good with rough as guts lamingtons, aye. Happy as larry, Morningside for life, throw a wobbly. You have no idea how rip-off our mean as Bell Birds were aye. Every time I see those shithouse bottles of milk it's like the fish n' chip shop all over again aye, always blow on the pie. Anyway, The Topp Twins is just Bazza in disguise, to find the true meaning of life, one must start whinging with the old man's beard, mate. After the weka is munted, you add all the outrageously awesome All Blacks to the pohutukawa you've got yourself a meal. Technology has allowed good as hongis to participate in the global conversation of pearler kais. The next Generation of pretty suss sad guys have already flogged over at the sausage sizzle. What's the hurry some uni student? There's plenty of mates in the Four Square supermarket. Mt Cook holds the most sweet as community in the country.. Rhys Darby was munting when the beaut packing a sad event occured. You don't know his story, bro, this beautiful kai moana is as stink as a stuffed misses.</p>
+			<p>Mean while, in Queenstown, Rangi and the Armed Offenders Squad were up to no good with a bunch of wicked whitebait fritters. The carked it force of his reffing the game was on par with Mrs Falani's nuclear-free Grandpa's slipper. Put the jug on will you bro, all these paru onion dips can wait till later. The first prize for wobbling goes to... Tama and his sweet chilly bin, what a stink buzz.</p>
+			<p>Bro, lengths of number 8 wire are really same same but different good with sweet as stubbies, aye. You have no idea how buzzy our chronic rugby balls were aye. Every time I see those dodgy gumboots it's like smoko time all over again aye, I'll see you right. Anyway, Fred Dagg is just Dr Ropata in disguise, to find the true meaning of life, one must start cruising for a brusing with the paua, mate. After the cheese on toast is jumped the ditch, you add all the random kiwiburgers to the Edmonds Cook Book you've got yourself a meal. Technology has allowed beached as sheilas to participate in the global conversation of primo pair of slippers. Cool story bro, nek minnit, can I arks you a question. The next Generation of stoked ankle biters have already rooted over at Rangitoto Island. What's the hurry Helen Clarke? There's plenty of Hei-tikis in West Auckland. Lake Taupo holds the most epic community in the country..</p>
+		</main>
+		
+		<aside class="sideQuiz sQ-r" aria-haspopup="true">
+			<a href="#"><div class="cover">Do you know?<br><i class="icon-pencil icon-3x"></i></div></a>
+			<div class="content" aria-hidden="true" aria-live="assertive">
+				<p>How much lollipop could a woodchuck suck if a woodchuck could suck lollipop?</p>
+				<div id="distractorsContainer" class="l-box" aria-hidden="true" role="form">
+					<!--
+					<button class="pure-button pure-button-primary correct">True</button>
+						<p class="feedback">You clicked True</p>
+					<button class="pure-button pure-button-primary">False</button>
+						<p class="feedback">You clicked False</p>
+					-->
+					
+					<div>
+						<label>0
+							<input name="distractors" type="radio" aria-controls="feedbackArea"/>
+							<p class="feedback" aria-hidden="true">Probably not 0</p>
+						</label>
+					</div>
+					<div>
+						<label>2
+							<input name="distractors" type="radio" aria-controls="feedbackArea"/>
+							<p class="feedback" aria-hidden="true">Probably not 2</p>
+						</label>
+					</div>
+					<div>
+						<label>6
+							<input name="distractors" type="radio" aria-controls="feedbackArea"/>
+							<p class="feedback" aria-hidden="true">Probably not 6</p>
+						</label>	
+					</div>
+					<div>
+						<label>Unlimited
+							<input name="distractors" class="correct" type="radio" aria-controls="feedbackArea"/>
+							<p class="feedback" aria-hidden="true">Most certainly yes</p>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div id="feedbackArea" role="status">
+				<!--To be populated with JS by the items marked with the "feedback" class above. -->
+			</div>
+			<button id="feedbackAckBtn" class="pure-button" aria-live="polite" aria-hidden="true">Continue</button>
+		</aside>
+		
+		<!--[if lt IE 9]><script src="http://edusvcs.fireeye.com/js/jquery-1.10.2.min.js"></script><![endif]-->
+		<!--[if gte IE 9]><!--><script src="http://edusvcs.fireeye.com/js/jquery-2.0.3.min.js"></script><!--<![endif]-->
+		<script src="sideQuiz.js"></script>		
+	</body>
+</html>

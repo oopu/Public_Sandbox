@@ -11,7 +11,7 @@
 			"file": "source/index.html",
 			"settings":
 			{
-				"buffer_size": 6978,
+				"buffer_size": 7045,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,7 +19,7 @@
 			"file": "source/css/global.css",
 			"settings":
 			{
-				"buffer_size": 3293,
+				"buffer_size": 3288,
 				"line_ending": "Windows"
 			}
 		}
@@ -51,11 +51,16 @@
 	},
 	"file_history":
 	[
+		"/E/Media/Documents/GitHub/Public_Sandbox/Blanco.Home/project.sublime-project",
 		"/C/Users/Chris/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
 	],
 	"find":
 	{
+<<<<<<< HEAD:Blanco.Home/project.sublime-workspace
 		"height": 28.0
+=======
+		"height": 23.0
+>>>>>>> 59893b3d0f2b35828193a54659493453df406ec5:Blanco.Home/ultrabook.sublime-workspace
 	},
 	"find_in_files":
 	{
@@ -100,15 +105,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6978,
+						"buffer_size": 7045,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD:Blanco.Home/project.sublime-workspace
 								6679,
 								6679
+=======
+								0,
+								0
+>>>>>>> 59893b3d0f2b35828193a54659493453df406ec5:Blanco.Home/ultrabook.sublime-workspace
 							]
 						],
 						"settings":
@@ -117,7 +127,11 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD:Blanco.Home/project.sublime-workspace
 						"translation.y": 1658.0,
+=======
+						"translation.y": 135.0,
+>>>>>>> 59893b3d0f2b35828193a54659493453df406ec5:Blanco.Home/ultrabook.sublime-workspace
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -129,15 +143,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3293,
+						"buffer_size": 3288,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								370,
-								370
+								0,
+								0
 							]
 						],
 						"settings":
@@ -157,7 +171,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -193,7 +207,11 @@
 	"project": "project.sublime-project",
 	"replace":
 	{
+<<<<<<< HEAD:Blanco.Home/project.sublime-workspace
 		"height": 52.0
+=======
+		"height": 42.0
+>>>>>>> 59893b3d0f2b35828193a54659493453df406ec5:Blanco.Home/ultrabook.sublime-workspace
 	},
 	"save_all_on_build": true,
 	"select_file":

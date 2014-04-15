@@ -9,17 +9,17 @@
 * inverse text: rgb(161, 171, 180)
 * inverse visited: black;
 */
-/* Using my own fonts with purecss:*/
-html, button, input, select, textarea, 
-	.pure-g [class *= "pure-u"],
-	.pure-g-r [class *= "pure-u"]{
-		font-family: Monaco, Consolas, “Lucida Console”, monospace, sans serif; /*Note that sans serif is used for section paragraphs.*/
-	}
+
+/*overwriting Pure's default font stack. May want to remove this later if it proves troublesome.*/
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] { font-family: Monaco, Consolas, “Lucida Console”, monospace, serif; }
+
 html{ background-color: #596A72; }
 body{
 	margin: 0;
 	padding: 2em;
-	
+		
 	background: #cedce7; /* Old browsers */
 	background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72)); /* Chrome,Safari4+ */
@@ -32,6 +32,11 @@ body{
 
 h1, h2, h3{
 	color: rgb(61, 85, 103);
+}
+
+#homeLink{
+	text-decoration: none;
+	font-size: inherit;
 }
 
 nav{
@@ -92,12 +97,15 @@ main{
 	margin: 0 auto;
 }
 
-section p{ font-family: sans-serif; }
+section p{
+	font-family: sans-serif;
+}
 
 .imgContainer{
 	position: relative;
 	max-width: 625px;
 	margin: 0 auto;
+	background-color: rgb(92, 99, 103);
 }
 
 .imgContainer img{

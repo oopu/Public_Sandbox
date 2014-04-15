@@ -4,7 +4,7 @@
 		<meta charset="utf-8"/>
 		<title>Blanco.Home</title>
 		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="//yui.yahooapis.com/pure/0.4.2/grids-min.css"> <!-- concat later into global.css -->
+		<link rel="stylesheet" href="css/pure-0.4.2-grids.min.css"> <!-- concat later into global.min.css -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"> <!-- concat later into global.css -->
 		<link rel="stylesheet" href="css/global.css"/>
 		<link rel="stylesheet" href="css/POIPops.css"/>
@@ -19,7 +19,7 @@
 		</style>
 	</head>
 	<body>
-		<h1>Blanco.Home</h1>
+		<a id="homeLink" href="//nowucblanco.me"><h1>Blanco.Home</h1></a>
 		
 		<nav class="hoverShadow">
 			<ul>
@@ -42,38 +42,38 @@
 			</ul>
 		</nav>
 		<main class="pure-g-r">
-			<section class="pure-u-1-2">
+			<section class="pure-u-1-2 pure-hidden-phone">
 				<h2>Blanco.Map</h2>
 				<div class="imgContainer padded insetShadow rounded">
-					<div id="dot-GitHub" class="POIDot hoverShadow anim-driftV" aria-haspopup="true">
+					<div id="dot-GitHub" class="POIDot hoverShadow anim-driftV" role="button" aria-haspopup="true">
 						<i class="fa fa-circle-o fa-lg"></i>
 						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
 							<a href="//github.com/oopu/Public_Sandbox"><i class="fa fa-github"></i>GitHub</a>
 							<p>For my HTML5 sandboxing</p>
 						</div>
 					</div>
-					<div id="dot-Bitbucket" class="POIDot hoverShadow anim-driftV-offset" aria-haspopup="true">
+					<div id="dot-Bitbucket" class="POIDot hoverShadow anim-driftV-offset" role="button" aria-haspopup="true">
 						<i class="fa fa-circle-o fa-lg"></i> 
 						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
 							<a href="//bitbucket.org/TehBlanco/public-demos"><i class="fa fa-bitbucket"></i>Bitbucket</a>
 							<p>For my ActionScript 3.0 sandboxing</p>
 						</div>
 					</div>
-					<div id="dot-flickr" class="POIDot hoverShadow anim-driftV" aria-haspopup="true">
+					<div id="dot-flickr" class="POIDot hoverShadow anim-driftV" role="button" aria-haspopup="true">
 						<i class="fa fa-circle-o fa-lg"></i> 
 						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
 							<a href="//www.flickr.com/photos/chrisbfish"><i class="fa fa-flickr"></i>Flickr</a>
 							<p>For some photography</p>
 						</div>
 					</div>
-					<div id="dot-LinkedIn" class="POIDot hoverShadow anim-driftV-offset" aria-haspopup="true">
+					<div id="dot-LinkedIn" class="POIDot hoverShadow anim-driftV-offset" role="button" aria-haspopup="true">
 						<i class="fa fa-circle-o fa-lg"></i>
 						<div class="POIContent padded rounded hoverShadow" aria-hidden="true" role="alert">	
 							<a href="//www.linkedin.com/pub/christopher-blanco/18/44a/332/"><i class="fa fa-linkedin"></i>LinkedIn</a>
 							<p>For more work history and contact info</p>
 						</div>
 					</div>
-					<img src="img/selfBig.png" alt="A self portrait of Chris Blanco"/>
+					<img src="img/self.jpg" alt="A self portrait of Chris Blanco"/>
 				</div>
 			</section>
 			<section class="pure-u-1-2">
@@ -90,7 +90,7 @@
 			</section>
 		</main>
 		<footer>
-			<p>Webpage designed, built, and all the things by <a href="mailto:nowucblanco@gmail.com">Chris Blanco</a>, &copy 2014. Uses <a href="//www.jquery.com">jQuery</a> and <a href="//purecss.io">Pure</a>.</p>
+			<p>Webpage designed, built, and all the things by <a href="mailto:nowucblanco@gmail.com">Chris Blanco</a>, &copy 2014. Uses <a href="//jquery.com">jQuery</a> and <a href="//purecss.io">Pure</a>.</p>
 		</footer>
 		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><![endif]-->
 		<!--[if gte IE 9]><!--><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!--<![endif]-->
