@@ -90,5 +90,5 @@
 	grunt.registerTask("setDeployPaths", ["replace:refMin"]);
 	grunt.registerTask("minImgs", ["imagemin:staticJPGs"]);
 	
-	grunt.registerTask("default", ["uglify:deploymentJS", "cssmin", "replace:refMin"]);
+	grunt.registerTask("default", ["uglify:deploymentJS", "cssmin:main", "replace:refMin"]);
 };
