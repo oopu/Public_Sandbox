@@ -56,7 +56,11 @@
 	],
 	"find":
 	{
+<<<<<<< HEAD:Blanco.Home/project.sublime-workspace
+		"height": 28.0
+=======
 		"height": 23.0
+>>>>>>> 59893b3d0f2b35828193a54659493453df406ec5:Blanco.Home/ultrabook.sublime-workspace
 	},
 	"find_in_files":
 	{
@@ -108,8 +112,13 @@
 						"selection":
 						[
 							[
+<<<<<<< HEAD:Blanco.Home/project.sublime-workspace
+								6679,
+								6679
+=======
 								0,
 								0
+>>>>>>> 59893b3d0f2b35828193a54659493453df406ec5:Blanco.Home/ultrabook.sublime-workspace
 							]
 						],
 						"settings":
@@ -118,7 +127,11 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD:Blanco.Home/project.sublime-workspace
+						"translation.y": 1658.0,
+=======
 						"translation.y": 135.0,
+>>>>>>> 59893b3d0f2b35828193a54659493453df406ec5:Blanco.Home/ultrabook.sublime-workspace
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -194,7 +207,11 @@
 	"project": "project.sublime-project",
 	"replace":
 	{
+<<<<<<< HEAD:Blanco.Home/project.sublime-workspace
+		"height": 52.0
+=======
 		"height": 42.0
+>>>>>>> 59893b3d0f2b35828193a54659493453df406ec5:Blanco.Home/ultrabook.sublime-workspace
 	},
 	"save_all_on_build": true,
 	"select_file":

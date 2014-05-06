@@ -39,32 +39,75 @@ h1, h2, h3{
 	font-size: inherit;
 }
 
-nav{
-	position: fixed;
-	top: 7em; /*Enough room to keep the home link from being obscured, ever.*/
-	left: 0%;
-	width: 15em;
-	padding: 1em;
-	background-color: rgba(56, 59, 62, 0.75);
-	border-width: 1px 1px 1px 0;
-	border-style: solid;
-	border-color: rgb(92, 99, 103);
-	border-radius: 0px 15px 15px 0px;
-	z-index: 100;
-}
+@media (min-width: 768px){
 
-nav ul{	
-	margin: 0.25em;
-	padding: 0;
-	list-style-type: none;
-}
-nav ul li{
-	border-width: 0 0 1px 0;
-	border-style: solid;
-	border-color: rgb(206, 220, 231);
-	padding: 0.5em 0;
-}
+	nav{
+		position: fixed;
+		top: 7em;
+		left: 0%;
+		width: 15em;
+		padding: 1em;
+		background-color: rgba(56, 59, 62, 0.75);
+		border-width: 1px 1px 1px 0;
+		border-style: solid;
+		border-color: rgb(92, 99, 103);
+		border-radius: 0px 15px 15px 0px;
+		z-index: 100;
+	}
 
+	nav ul{	
+		margin: 0.25em;
+		padding: 0;
+		list-style-type: none;
+	}
+	nav ul li{
+		border-width: 0 0 1px 0;
+		border-style: solid;
+		border-color: rgb(206, 220, 231);
+		padding: 0.5em 0;
+	}	
+
+	main{
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 767px){
+
+	nav{
+		display: block;
+		width: 100%;
+		height: 3em;
+		padding: 0em;
+		background-color: rgba(56, 59, 62, 0.75);
+		border-width: 1px 1px 1px 0;
+		border-style: solid;
+		border-color: rgb(92, 99, 103);
+		border-radius: 15px;
+		z-index: 100;
+	}
+	nav ul{	
+		margin: 0.25em;
+		padding: 0;
+		list-style-type: none;
+	}
+	nav ul li{
+		float: right;
+		border-right: 1px solid rgb(206, 220, 231);
+		padding: 0.5em;
+	}
+	nav ul li:first-child{
+		float: right;
+		border-right: 0px solid rgb(206, 220, 231);
+		padding: 0.5em;
+	}
+	nav ul li p{ display: none; }
+
+	main{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
 a{
 	font-size: 1.25em;
 }
@@ -72,16 +115,15 @@ a:link{
 	color: rgb(206, 220, 231);
 }
 a:link:hover, a:focus{
-	/*color: white;*/
 	color: rgb(139, 193, 235);
 }
 a:visited{
 	color: black;
 }
 a:visited:hover, a:visited:focus{
-	/*color: rgb(206, 220, 231);*/
 	color: rgb(139, 193, 235);
 }
+
 nav ul li p{
 	margin: 0.5em 0 0em 0.5em;
 	color: rgb(206, 220, 231);
