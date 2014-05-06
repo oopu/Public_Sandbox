@@ -4,8 +4,13 @@
 *	Use goToPOI() to skip straight to a specific point of interest. (This assumes the guide is already active).
 *	Use openGuide() and closeGuide() for ... self-explanatory actions.
 * 	
-*	Designed to work with pageguide.js v1.2.0.
-*	For questions contact Chris Blanco (christopher.blanco@fireeye.com)
+*	Designed to work with pageguide.js v1.2.0 and my modified pageguide.css (and pageguide.ie8.css) file.
+*	This was originally developed by Chris Blanco for use at FireEye in the Training department.
+*
+*	TO DO:
+*		- Clean up POI references; data-tour_target can be used for all things if I write a longer query string, allowing for idString arguments
+*		- Unify assignPOIAction() and assignClickTarget() to use idStrings
+*		- Allow assignPOIAction() and assignClickTarget() to take idStrings OR ints as arguments
 */
 
 var PageGuideMan = (function (){
@@ -223,12 +228,15 @@ var PageGuideMan = (function (){
 					if(noClickTarget){
 						if($("#tlyPageGuide li div").find(".continueLink").length <= 1){
 							//console.log("Inserting click to continue link");
-							$("#tlyPageGuide li div").append('<a class="continueLink" href="#">Click here to continue to the next activity.</a>'); 
+							
+							/* The below was useful when this was a part of a course enclosed by the course wrapper we used. This would provide a link to trigger the below events, which is not useful here but included for reference. Read on for more info.
+							$("#tlyPageGuide li div").append('<a class="continueLink" href="#">Click here to continue to the next activity.</a>'); */
 													
 							//This is created to listen for clicks on the "continueLink"
 							$("#tlyPageGuideMessages").on("click", ".continueLink", function (){
 															
 								//console.log("Link clicked. Continuing to next activity.");
+								/* The below was useful when this was a part of a course enclosed by the course wrapper we used. This would trigger events to complete the current activity and trigger the load of the next activity.*/
 								parent.$("body").trigger("FEYE.activityComplete").trigger("FEYE.go.next");
 							});
 						}

@@ -1,0 +1,56 @@
+﻿/** CSS specific to the TaskDrawer widget. **/
+.TaskDrawer
+{
+	position: fixed;
+	display: block;
+	border-radius: 5px 0px 0px 5px;
+	box-shadow: 5px 5px 5px 0px rgb(91, 103, 112);
+	padding: 1.3em 0;
+	background-color: rgb(91, 103, 112);
+	color: white;
+	width: 560px;
+	right: -534px;
+	top: 40%;
+}
+.TaskDrawer h2
+{
+	margin: 0em 0em 0.25em 1.25em;
+	border-bottom: 1px solid white;
+}
+.TaskDrawer ol
+{
+	float: left;
+	padding-left: 6px;
+	width: 100%;
+	list-style: none;
+}
+.TaskDrawer li::before{
+	content:"\f096";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.1em;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 0.5em;
+}
+.TaskDrawer .active
+{
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.TaskDrawer .completed
+{
+	color: rgb(162, 170, 173);
+}
+.TaskDrawer .completed::before{
+	content:"\f046";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.1em;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 0.5em;
+}

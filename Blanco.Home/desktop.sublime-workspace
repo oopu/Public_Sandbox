@@ -11,7 +11,7 @@
 			"file": "source/index.html",
 			"settings":
 			{
-				"buffer_size": 7078,
+				"buffer_size": 7210,
 				"line_ending": "Windows"
 			}
 		},
@@ -114,15 +114,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7078,
+						"buffer_size": 7210,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1258,
-								1258
+								3913,
+								3913
 							]
 						],
 						"settings":
@@ -131,10 +131,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 520.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -198,7 +198,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

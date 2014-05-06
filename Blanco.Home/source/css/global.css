@@ -34,14 +34,14 @@ h1, h2, h3{
 	color: rgb(61, 85, 103);
 }
 
-#homeLink{
+#homeLink{ /*At some point this should be incorporated above the nav and float with it, I think.*/
 	text-decoration: none;
 	font-size: inherit;
 }
 
 nav{
 	position: fixed;
-	top: 10%;
+	top: 7em; /*Enough room to keep the home link from being obscured, ever.*/
 	left: 0%;
 	width: 15em;
 	padding: 1em;
@@ -94,6 +94,7 @@ nav ul li i{
 
 main{
 	width: 70%;
+	padding-left: 16em; /*To keep from running under the nav bar*/
 	margin: 0 auto;
 }
 
