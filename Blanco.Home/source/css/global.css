@@ -78,7 +78,6 @@ h1, h2, h3{
 	nav{
 		display: block;
 		width: 100%;
-		height: 3em;
 		padding: 0em;
 		background-color: rgba(56, 59, 62, 0.75);
 		border-width: 1px 1px 1px 0;
@@ -93,12 +92,11 @@ h1, h2, h3{
 		list-style-type: none;
 	}
 	nav ul li{
-		float: right;
+		display: inline-block;
 		border-right: 1px solid rgb(206, 220, 231);
 		padding: 0.5em;
 	}
-	nav ul li:first-child{
-		float: right;
+	nav ul li:last-child{
 		border-right: 0px solid rgb(206, 220, 231);
 		padding: 0.5em;
 	}
