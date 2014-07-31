@@ -3,48 +3,24 @@
 	{
 		"selected_items":
 		[
+			[
+				"BAR",
+				"BAR_HEIGHT"
+			],
+			[
+				"BAR_",
+				"BAR_MAX_LENGTH"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "source/index.html",
+			"file": "/E/Media/Work Documents/GitHub/Public_Sandbox/Charting/index.html",
 			"settings":
 			{
-				"buffer_size": 7308,
+				"buffer_size": 2637,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "deploy/index.html",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 2182,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "source/css/global.css",
-			"settings":
-			{
-				"buffer_size": 4195,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "desktop.sublime-project",
-			"settings":
-			{
-				"buffer_size": 73,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -75,6 +51,10 @@
 	},
 	"file_history":
 	[
+		"/E/Media/Work Documents/GitHub/Public_Sandbox/Blanco.Home/source/css/global.css",
+		"/E/Media/Work Documents/GitHub/Public_Sandbox/Blanco.Home/Gruntfile.js",
+		"/E/Media/Work Documents/GitHub/Public_Sandbox/Blanco.Home/source/index.html",
+		"/E/Media/Work Documents/GitHub/Public_Sandbox/Blanco.Home/deploy/index.html",
 		"/E/Media/Documents/GitHub/Public_Sandbox/Blanco.Home/source/css/POIPops.css",
 		"/E/Media/Documents/GitHub/Public_Sandbox/Blanco.Home/source/js/POIPops.js",
 		"/E/Media/Documents/GitHub/Public_Sandbox/Blanco.Home/deploy/index.html",
@@ -126,19 +106,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "source/index.html",
+					"file": "/E/Media/Work Documents/GitHub/Public_Sandbox/Charting/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7308,
+						"buffer_size": 2637,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6911,
-								6911
+								1239,
+								1239
 							]
 						],
 						"settings":
@@ -147,133 +127,17 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 500.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "deploy/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 2,
-					"file": "Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2157,
-								2157
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 306.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/css/global.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4195,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2568,
-								2568
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 602.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "desktop.sublime-project",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 73,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
