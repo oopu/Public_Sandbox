@@ -16,6 +16,33 @@ main {
 	padding: 33% 0;
 }
 
+#controlPanel {
+	position: fixed;
+	bottom: 0;
+	height: 8rem;
+	left: 30%;
+	right: 30%;
+	padding: 0.5rem;
+	background-color: #444;
+	box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 5px 5px 0px 0px;
+	z-index: 1;
+}
+#controlPanel form {
+	float: left;
+	margin-left: 0.5rem;
+	border: 2px solid #888;
+	padding: 1rem;
+	height: 6rem;
+	width: 44%;
+	color: white;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+#controlPanel form h2 { font-size: 1.2rem; margin-top: 0; }
+#controlPanel label { display: block; }
+#controlPanel input { float: left; margin: 0.25rem 0.5rem; }
+
 #spriteArea {
 	position: fixed;
 	top: 0;

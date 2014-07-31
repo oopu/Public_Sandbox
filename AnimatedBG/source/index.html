@@ -10,6 +10,27 @@
 	</head>
 	<body>
 		<main>
+			<div id="controlPanel">
+				<form name="shapeType">
+					<h2>Draw Shape Using:</h2>
+					<label>CSS3
+						<input id="shape-CSS3" name="shapeTypes" type="radio" checked/>
+					</label>
+					<label>SVG
+						<input id="shape-SVG" name="shapeTypes" type="radio" disabled/>
+					</label>
+				</form>
+				<form name="renderType">
+					<h2>Render Animation Using:</h2>
+					<label>CSS3
+						<input id="render-CSS3" name="renderTypes" type="radio" checked/>
+					</label>
+					<label>SVG
+						<input id="render-jQuery" name="renderTypes" type="radio" disabled/>
+					</label>
+				</form>
+			</div>
+
 			<div id="spriteArea">
 				<div id="s1" class="teardrop"></div>
 				<div id="s2" class="teardrop thinner"></div>
