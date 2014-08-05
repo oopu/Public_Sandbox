@@ -25,22 +25,76 @@
 					<label>CSS3
 						<input id="render-CSS3" name="renderTypes" type="radio" checked/>
 					</label>
-					<label>SVG
-						<input id="render-jQuery" name="renderTypes" type="radio" disabled/>
+					<label>jQuery
+						<input id="render-jQuery" name="renderTypes" type="radio"/>
 					</label>
 				</form>
+				<div class="noteArea">
+					<p><b>Note:</b> To have your browser display FPS counters:</p>
+					<ul>
+						<li>In Chrome, go to chrome://flags and enable "FPS counter"</li>
+						<li>...</li>
+					</ul>
+				</div>
 			</div>
 
-			<div id="spriteArea">
-				<div id="s1" class="teardrop"></div>
-				<div id="s2" class="teardrop thinner"></div>
-				<div id="s3" class="teardrop darker"></div>
-				<div id="s4" class="teardrop babby"></div>
-				<div id="s5" class="teardrop"></div>
-				<div id="s6" class="teardrop thinner"></div>
-				<div id="s7" class="teardrop darker"></div>
-				<div id="s8" class="teardrop babby"></div>
+			<div id="spriteArea-CSS">
+				<div id="s1" class="teardrop anim"></div>
+				<div id="s2" class="teardrop thinner anim"></div>
+				<div id="s3" class="teardrop darker anim"></div>
+				<div id="s4" class="teardrop babby anim"></div>
+				<div id="s5" class="teardrop anim"></div>
+				<div id="s6" class="teardrop thinner anim"></div>
+				<div id="s7" class="teardrop darker anim"></div>
+				<div id="s8" class="teardrop babby anim"></div>
 			</div>
+
+			<svg id="spriteArea-SVG" class="hidden">
+
+			</svg>
 		</main>
+
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><![endif]-->
+		<!--[if gte IE 9]><!--><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!--<![endif]-->
+		<script src="jQAnimator.js"></script>
+		<script>
+		$("#controlPanel").on("click", 'input[name="renderTypes"]', function (e){
+			
+			//e.preventDefault();
+
+			switch($(this).parent().text().trim()){
+				case "CSS3":
+					$("#spriteArea-CSS, #spriteArea-SVG").find(".teardrop").addClass("anim");
+					//kill jQuery animation
+					jQAnimator.stopAnim();
+					console.log("CSS3 render mode set");
+					break;
+				case "jQuery":
+					$("#spriteArea-CSS, #spriteArea-SVG").find(".teardrop").removeClass("anim");
+					//start jQuery animation
+					jQAnimator.startAnim();
+					console.log("jQuery render mode set");
+					break;
+			}
+		});
+
+		$("#controlPanel").on("click", 'input[name="shapeTypes"]', function (e){
+			
+			//e.preventDefault();
+
+			switch($(this).parent().text().trim()){
+				case "CSS3":
+					$("#spriteArea-CSS").removeClass("hidden");
+					$("#spriteArea-SVG").addClass("hidden");
+					console.log("CSS3 shape mode set");
+					break;
+				case "SVG":
+					$("#spriteArea-SVG").removeClass("hidden");
+					$("#spriteArea-CSS").addClass("hidden");
+					console.log("SVG shape mode set");
+					break;
+			}
+		});
+		</script>
 	</body>
 </html>

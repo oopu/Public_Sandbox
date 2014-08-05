@@ -16,6 +16,8 @@ main {
 	padding: 33% 0;
 }
 
+.hidden { display: none; }
+
 #controlPanel {
 	position: fixed;
 	bottom: 0;
@@ -42,8 +44,20 @@ main {
 #controlPanel form h2 { font-size: 1.2rem; margin-top: 0; }
 #controlPanel label { display: block; }
 #controlPanel input { float: left; margin: 0.25rem 0.5rem; }
-
-#spriteArea {
+#controlPanel .noteArea{
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	width: 100%;
+	height: 80%;
+	padding: 0.5rem;
+	background-color: #222;
+	color: white;
+	font-size: 1.0rem;
+	font-family: sans-serif;
+	z-index: 0;
+}
+#spriteArea-CSS, #spriteArea-SVG {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -61,7 +75,8 @@ main {
 	border-right: 155px solid rgba(66, 152, 181, 0.5);
 	border-bottom: 50px solid transparent;
 	border-radius: 0px 50px 50px 0px;
-
+}
+.teardrop.anim{
 	-webkit-animation: slideRight 4000ms linear 500ms infinite;
 	-moz-animation: slideRight 4000ms linear 500ms infinite;
 	-o-animation: slideRight 4000ms linear 500ms infinite;
@@ -70,7 +85,8 @@ main {
 .teardrop.thinner {
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent;
-
+}
+.teardrop.thinner.anim {
 	-webkit-animation: slideRight 2000ms ease-out 5000ms infinite;
 	-moz-animation: slideRight 2000ms ease-out 5000ms infinite;
 	-o-animation: slideRight 2000ms ease-out 5000ms infinite;
@@ -78,7 +94,8 @@ main {
 }
 .teardrop.darker {
 	border-right: 155px solid rgba(66, 152, 181, 1);
-
+}
+.teardrop.darker.anim {
 	-webkit-animation: slideRight 4000ms linear 500ms infinite;
 	-moz-animation: slideRight 4000ms linear 500ms infinite;
 	-o-animation: slideRight 4000ms linear 500ms infinite;
@@ -89,7 +106,8 @@ main {
 	border-right: 100px solid rgba(66, 152, 181, 0.25);
 	border-bottom: 30px solid transparent;
 	border-radius: 0px 30px 30px 0px;
-
+}
+.teardrop.babby.anim {
 	-webkit-animation: slideRight 4000ms ease-in 500ms infinite;
 	-moz-animation: slideRight 4000ms ease-in 500ms infinite;
 	-o-animation: slideRight 4000ms ease-in 500ms infinite;
