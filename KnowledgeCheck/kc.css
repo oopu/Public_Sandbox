@@ -1,0 +1,28 @@
+﻿.kc { max-width: 66rem; }
+/* Replaced this styling with uikit's uk-panel-title default styling
+.kc .content>p { font-weight: bold; }
+*/
+.kc .content .distractorsContainer{ margin: 1.5rem 0rem 1.5rem 1rem; padding-left: 0; list-style: none; }
+.kc .content .distractorsContainer input
+{
+	float: left;
+	margin: 0.15rem 0.5rem;
+}
+.kc .content .distractorsContainer li:hover { background-color: rgba(66, 152, 181, 0.1); border-radius: 3px; }
+.kc .content .distractorsContainer label p{	margin: 0.5rem 0.5rem 0rem 2rem; cursor: pointer; }
+.kc .content .distractorsContainer.disabled li:hover { background-color: inherit; }
+.kc .content .distractorsContainer.disabled label p{ cursor: default; }
+
+.kc .feedback /* This will be revealed by Javascript when an answer is submitted */
+{
+	display: none;
+}
+.kc .feedbackArea { opacity: 0; }
+
+.kc .clickedBtn { background-color: rgb(29, 37, 45); }
+
+/* For multi-select quizzes */
+.kc .clearAnswersBtn { margin-top: -1.5rem }
+.kc i { float: left; margin-left: -1rem; }
+.kc i.fa.fa-check { color: rgb(118, 207, 55); }
+.kc i.fa.fa-times { color: rgb(200, 16, 46); }
