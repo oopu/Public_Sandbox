@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Knowledge Check</title>
+        <link rel="stylesheet" href="css/uikit.gradient.min.css">
+        <link rel="stylesheet" href="css/kc.css">
+    </head>
+    <body>
+        <h1>Knowledge Check</h1>
+                
+        <div id="multiSelect" class="kc">
+            <div class="content">
+                <p>Which of the following are real pokemon? <em>Select all that apply.</em></p>
+                <ul class="distractorsContainer" role="form">
+                    <li>
+                        <label>
+                            <input name="distractors" class="correct" type="radio"/>
+                            <p>Pikachu</p>
+                            <p class="feedback">Pikachu is #025 in the Pokedex. I hope you at least got this one!</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" class="correct" type="radio"/>
+                            <p>Gardevoir</p>
+                            <p class="feedback">Gardevoir is #282 in the Pokedex.</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Pumbloom</p>
+                            <p class="feedback">Pumbloom is not a real pokemon, just a <a href="//www.youtube.com/watch?v=74yK4-_3K0E" target="_blank">Game Grumps reference (warning: language)</a>.</p>
+                        </label>
+                    </li>
+                    <li>
+                       <label>
+                            <input name="distractors" class="correct" type="radio"/>
+                            <p>Wurmple</p>
+                            <p class="feedback">Wurmple is #265 in the Pokedex.</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Gleegore</p>
+                            <p class="feedback">Gleegore is just a name that I made up.</p>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="feedbackArea" role="status">
+                <!--To be populated with JS by the items marked with the "feedback" class above. -->
+            </div>
+            <!-- Generic feedback. Displayed by default unless this is a 2-distractor quiz. Normally hidden -->
+            <h4 class="allCorrect feedback">Good job!</h4>
+            <h4 class="incorrect feedback">Not quite. Please check your selection and try again.</h4>
+            <h4 class="maxFails feedback">Not quite. The correct answer selection has been made for you. Please review before continuing.</h4>
+        </div>
+
+        <div id="singleSelect" class="kc">
+            <div class="content">
+                <p>Which one of the following is a real pokemon?</p>
+                <ul class="distractorsContainer" role="form">
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Ganondorf</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Lt. Surge</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Pumbloom</p>
+                        </label>
+                    </li>
+                    <li>
+                       <label>
+                            <input name="distractors" class="correct" type="radio"/>
+                            <p>Gligar</p>
+                            <p class="feedback">Gligar is #207 in the Pokedex.</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Gleegore</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Dameon</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>MATT DAMON</p>
+                            <p class="feedback">MATT DAMON!</p>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="feedbackArea" role="status">
+                <!--To be populated with JS by the items marked with the "feedback" class above. -->
+            </div>
+            <!-- Generic feedback. Displayed by default unless this is a 2-distractor quiz. Normally hidden -->
+            <h4 class="allCorrect feedback">Good job!</h4>
+            <h4 class="incorrect feedback">Not quite. Please check your selection and try again.</h4>
+            <h4 class="maxFails feedback">Not quite. The correct answer selection has been made for you. Please review before continuing.</h4>
+        </div>
+
+        <div id="TF" class="kc">
+            <div class="content">
+                <p>True or False? <b>Mr. Mime</b> is a real pokemon.</p>
+                <div class="distractorsContainer" role="form">
+                    <span>
+                        <button class="correct">True</button>
+                        <p class="feedback">Correct! Mr. Mime is #122 in the Pokedex.</p>
+                        </label>
+                    </span>
+                    <span>
+                        <button>False</button>
+                        <p class="feedback">Sorry, that's incorrect. Mr. Mime is #122 in the Pokedex.</p>
+                        </label>
+                    </span>
+                </div>
+            </div>
+            <div class="feedbackArea" role="status">
+                <!--To be populated with JS by the items marked with the "feedback" class above. -->
+            </div>
+        </div>
+
+        <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+        <!--[if gte IE 9]><!--><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/kc.js"></script>
+        <script>
+            $(function() {
+
+                $("#multiSelect").kc();
+                $("#singleSelect").kc();
+                $("#TF").kc({
+                    callbackFxn: function (){
+                        $("#TF").after("<p><i>Yeah, but he's really weird, isn't he?</i></p>");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

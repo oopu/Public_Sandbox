@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dynamic Menus</title>
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.come/ajax/libs/html5shiv/3.7/html5shiv.js"></script><![endif]-->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/navList.css"/>
+		<style>
+			body{ 
+				background-color: black; 
+				background-image: url("img/bg.png");
+				background-repeat: no-repeat;
+				margin: 0; 
+				padding: 0; 
+			}
+		</style>
+	</head>
+	<body>
+		<!-- The goal here was to create a set of rollover menus of potentially unlimited depth via AJAX and raw JavaScript -->
+		<nav id="navList">
+			<div class="header">
+				<h1>Navigation</h1>
+			</div>
+		<!-- To be populated by JavaScript when the JSON file is loaded by JSONMan -->
+		</nav>
+		
+		<script src="js/ListGenMan.js"></script>
+		<script src="js/JSONMan.js"></script>
+		<script>			
+			JSONMan.init("navList");
+		</script>
+	</body>
+</html>

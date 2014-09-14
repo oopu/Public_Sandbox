@@ -1,0 +1,191 @@
+body {
+	background-color: rgb(26, 26, 26);
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	background: #1a1a1a; /* Old browsers */
+	background: -moz-linear-gradient(top, #1a1a1a 0%, #4298b5 50%, #1a1a1a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1a1a1a), color-stop(50%,#4298b5), color-stop(100%,#1a1a1a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1a1a1a 0%,#4298b5 50%,#1a1a1a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1a1a1a 0%,#4298b5 50%,#1a1a1a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1a1a1a 0%,#4298b5 50%,#1a1a1a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1a1a1a 0%,#4298b5 50%,#1a1a1a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#1a1a1a',GradientType=0 ); /* IE6-9 */
+	padding: 33% 0;
+}
+
+.hidden { display: none; }
+
+#controlPanel {
+	position: fixed;
+	bottom: 0;
+	height: 8rem;
+	left: 30%;
+	right: 30%;
+	padding: 0.5rem;
+	background-color: #444;
+	box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 5px 5px 0px 0px;
+	z-index: 1;
+}
+#controlPanel form {
+	float: left;
+	margin-left: 0.5rem;
+	border: 2px solid #888;
+	padding: 1rem;
+	height: 6rem;
+	width: 44%;
+	color: white;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+#controlPanel form h2 { font-size: 1.2rem; margin-top: 0; }
+#controlPanel label { display: block; }
+#controlPanel input { float: left; margin: 0.25rem 0.5rem; }
+#controlPanel .noteArea{
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	width: 100%;
+	height: 80%;
+	padding: 0.5rem;
+	background-color: #222;
+	color: white;
+	font-size: 1.0rem;
+	font-family: sans-serif;
+	z-index: 0;
+}
+#spriteArea-CSS, #spriteArea-SVG {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Shapes for animating along the background */
+.teardrop {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 155px solid rgba(66, 152, 181, 0.5);
+	border-bottom: 50px solid transparent;
+	border-radius: 0px 50px 50px 0px;
+}
+.teardrop.anim{
+	-webkit-animation: slideRight 4000ms linear 500ms infinite;
+	-moz-animation: slideRight 4000ms linear 500ms infinite;
+	-o-animation: slideRight 4000ms linear 500ms infinite;
+	animation: slideRight 4000ms linear 500ms infinite;
+}
+.teardrop.thinner {
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+}
+.teardrop.thinner.anim {
+	-webkit-animation: slideRight 2000ms ease-out 5000ms infinite;
+	-moz-animation: slideRight 2000ms ease-out 5000ms infinite;
+	-o-animation: slideRight 2000ms ease-out 5000ms infinite;
+	animation: slideRight 2000ms ease-out 5000ms infinite;
+}
+.teardrop.darker {
+	border-right: 155px solid rgba(66, 152, 181, 1);
+}
+.teardrop.darker.anim {
+	-webkit-animation: slideRight 4000ms linear 500ms infinite;
+	-moz-animation: slideRight 4000ms linear 500ms infinite;
+	-o-animation: slideRight 4000ms linear 500ms infinite;
+	animation: slideRight 4000ms linear 500ms infinite;
+}
+.teardrop.babby {
+	border-top: 30px solid transparent;
+	border-right: 100px solid rgba(66, 152, 181, 0.25);
+	border-bottom: 30px solid transparent;
+	border-radius: 0px 30px 30px 0px;
+}
+.teardrop.babby.anim {
+	-webkit-animation: slideRight 4000ms ease-in 500ms infinite;
+	-moz-animation: slideRight 4000ms ease-in 500ms infinite;
+	-o-animation: slideRight 4000ms ease-in 500ms infinite;
+	animation: slideRight 4000ms ease-in 500ms infinite;
+}
+/*--------------------------------------------*/
+
+/* Animations --------------------------------*/
+
+@-webkit-keyframes slideRight {
+	to{ -webkit-transform: translateX(2000px); opacity: 0; }
+}
+@-moz-keyframes slideRight {
+	to{ -moz-transform: translateX(2000px); opacity: 0; }
+}
+@-o-keyframes slideRight {
+	to{ -o-transform: translateX(2000px); opacity: 0; }
+}
+@keyframes slideRight {
+	to{ transform: translateX(2000px); opacity: 0; }
+}
+
+/*--------------------------------------------*/
+
+
+/* Specific sprites --------------------------*/
+
+#s1 {
+	top: 30px;
+	left: -300px;
+}
+#s2 {
+	top: 100px;
+	left: -300px;
+}
+#s3 {
+	top: 250px;
+	left: -300px;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+#s4 {
+	top: 480px;
+	left: -300px;
+}
+#s5 {
+	top: 500px;
+	left: -200px;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+#s6 {
+	top: 550px;
+	left: -300px;
+	-webkit-animation-delay: 500ms;
+	-moz-animation-delay: 500ms;
+	-o-animation-delay: 500ms;
+	animation-delay: 500ms;
+}
+#s7 {
+	top: 700px;
+	left: -300px;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
+}
+#s8 {
+	top: 800px;
+	left: -300px;
+	-webkit-animation-delay: 1500ms;
+	-moz-animation-delay: 1500ms;
+	-o-animation-delay: 1500ms;
+	animation-delay: 1500ms;
+}
+
+/*-------------------------------------------*/

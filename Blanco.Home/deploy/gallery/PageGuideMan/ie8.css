@@ -1,0 +1,7 @@
+﻿.POIDiv
+{
+	position: absolute;
+	opacity: 0;
+	/*box-shadow: 0px 0px 150px 50px black; Doesn't work in IE 8, making the whole thing invisible*/
+	border: 3px solid rgb(200, 16, 46);
+}

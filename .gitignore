@@ -219,3 +219,4 @@ node-modules/
 node_modules
 /KnowledgeCheck/*.sublime-project
 /KnowledgeCheck/*.sublime-workspace
+/Bootstrapping

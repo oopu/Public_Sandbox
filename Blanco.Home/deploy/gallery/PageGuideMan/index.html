@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>PageGuideMan Demo</title>
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script><![endif]-->
+		
+		<!-- Please note that this page makes use of copies of files that I worked with while in FireEye's training team. -->
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/magnific-popup.css"> <!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="css/pageguide.css">
+		<!--[if lt IE 9]><link rel="stylesheet" href="css/pageguide.ie8.css"><![endif]-->
+		<link rel="stylesheet" href="css/TaskDrawer.css">
+		<!--[if lt IE 9]><link rel="stylesheet" href="ie8.css"><![endif]-->
+		<style>
+			#someThing{
+				top: 37%;
+				left: 74%;
+				height: 27%;
+				width: 6%;
+			}
+			#clickTarget{
+				top: 14.5%;
+				left: 22%;
+				height: 10%;
+				width: 6%;
+			}
+		</style>
+	</head>
+	<body>		
+		<main>
+			<section id="topArea" class="pure-g-r">
+				<div class="pure-u-1">
+					<h2>PageGuideMan Demo</h2>
+					<p>Normally this library is used to demonstrate a screenshot of a user interface. To protect intellectual property, however, I have used a big silly picture of Boo from Super Mario Bros.</p>
+					<p><button id="beginBtn" class="pure-button pure-button-primary">Begin</button></p>
+				</div>
+			</section>
+			<section id="screenshotWrapper" class="pure-g-r">
+				<div class="imgContainer" class="pure u-1">
+					<a href="#"><div id="someThing" class="POIDiv"></div></a>
+					<a href="#"><div id="clickTarget" class="POIDiv"></div></a>
+					<img id="screenshot" src="img/screenshot.png" alt="A big silly cartoon ghost named Boo from the popular video game Super Mario Bros."/>
+				</div>
+			</section>
+		</main>
+
+		<aside class="TaskDrawer">
+			<h2>Mission Objectives</h2>
+			<ol>
+				<li class="completed">You did some stuff</li>
+				<li class="completed">You then did some more stuff</li>
+				<li class="completed">Just when you thought you were finished, you did a little more</li>
+				<li class="active">You are now looking at a picture of Boo</li>
+			</ol>
+		</aside>
+		
+		<!-- PageGuide guide stuff -->
+		
+		<ul id="tlyPageGuide" data-tourtitle="PageGuideMan Demo">
+		  <li class="tlypageguide_top" data-tourtarget="#someThing">
+			<div>
+				<p class="instructions"><i class="fa fa-hand-o-up"></i> This is an item that expects user interaction... at least it would if there was something to do here. It's hard to do much with a ghost's tail.</p>
+			</div>
+		  </li>
+		  <li class="tlypageguide_top" data-tourtarget="#clickTarget">
+			<div>
+				<p>Here you can see the left eye of this Boo. Isn't that nice? This now completes your objectives.</p>
+			</div>
+		  </li>
+		</ul>
+		
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><![endif]-->
+		<!--[if gte IE 9]><!--><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!--<![endif]-->
+		<script src="js/pageguide.min.js"></script>
+		<script src="js/PageGuideMan.js"></script>
+		<script src="js/TaskDrawerMan.js"></script>
+		<script src="js/jquery.magnificent-popup_v0.9.6.js"></script> 
+		<script>
+			$(window).load(function (){
+				
+				$("#beginBtn").click(function (){
+					$("#topArea").slideUp(300, function (){
+						
+						$("#screenshotWrapper").animate({"opacity": "1"});
+						PageGuideMan.openGuide(); //called manually because no welcome screen will pop up.
+					});
+				});
+								
+				TaskDrawerMan.init();
+				
+				PageGuideMan.initGuide(["#someThing", "#clickTarget"], ".POIDiv");
+				//PageGuideMan.assignClickTarget($("#clickTarget")); //Doing this triggers an event to the course wrapper to proceed to the next activity. Intended for seamless transitions.
+				PageGuideMan.assignPOIAction(1, function (){
+					TaskDrawerMan.updateTaskList();
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+{	
+	"links": [
+		{
+			"name": "Option0",
+			"url": "option0.html",
+			"links": []
+		},
+		{
+			"name": "Option1",
+			"url": "option1.html",
+			"links": []
+		},
+		{
+			"name": "Option2",
+			"url": "option2.html",
+			"links": []
+		},
+		{
+			"name": "Option3",
+			"url": "option3/index.html",
+			"links": [
+				{
+					"name": "Sub0",
+					"url": "option3/sub0.html",
+					"links": []
+				},
+				{
+					"name": "Sub1",
+					"url": "option3/sub1/index.html",
+					"links": [
+						{
+							"name": "Nifty Thingy",
+							"url": "option3/sub1/nifty.html",
+							"links": []
+						}, 
+						{
+							"name": "Neato Whizzbang",
+							"url": "option3/sub1/neato.html",
+							"links": []
+						}, 
+						{
+							"name": "Outrageous Trinket",
+							"url": "option3/sub1/outrageous.html",
+							"links": []
+						}, 
+						{
+							"name": "Uncommon Loot",
+							"url": "option3/sub1/uncommon.html",
+							"links": []
+						}, 
+						{
+							"name": "Awesome Whatsit",
+							"url": "option3/sub1/awesome.html",
+							"links": []
+						}
+					]
+				},
+				{
+					"name": "Sub2",
+					"url": "option3/sub2.html",
+					"links": []
+				},
+				{
+					"name": "Sub3",
+					"url": "option3/sub3.html",
+					"links": []
+				}
+			]
+		},
+		{
+			"name": "Option4",
+			"url": "option4.html",
+			"links": []
+		}
+	]
+}

@@ -75,6 +75,22 @@
 				files: [{
 					"deploy/img/self.jpg" : "source/img/self.jpg"
 				}]
+			},
+			galleryImgs: {
+				files: [{
+					expand: true,
+					cwd: "source/img/gallery/",
+					src: "*.png",
+					dest: "deploy/img/gallery/"
+				}]
+			}
+		},
+		copy: {
+			copyGalleryItems: {
+				expand: true,
+				nonull: true,
+				src: ["../AnimatedBG/source/**", "../Candle/**", "../DynamicMenus/**", "../KnowledgeCheck/**", "../PageGuideMan/**", "!../**/*.sublime-project", "!../**/*.sublime-workspace"],
+				dest: "deploy/gallery/**"
 			}
 		}
 	});
@@ -84,11 +100,14 @@
 	grunt.loadNpmTasks("grunt-ftp-deploy");
 	grunt.loadNpmTasks("grunt-replace");
 	grunt.loadNpmTasks("grunt-contrib-imagemin");
+	grunt.loadNpmTasks("grunt-contrib-copy");
 
 	grunt.registerTask("uglifySharedJS", ["uglify:deploymentJS"]);
 	grunt.registerTask("minifySharedCSS", ["cssmin"]);
 	grunt.registerTask("setDeployPaths", ["replace:refMin"]);
 	grunt.registerTask("minImgs", ["imagemin:staticJPGs"]);
-	
-	grunt.registerTask("default", ["uglify:deploymentJS", "cssmin:main", "replace:refMin"]);
+	grunt.registerTask("minGalleryImgs", ["imagemin:galleryImgs"]);
+	grunt.registerTask("prepGallery", ["copy:copyGalleryItems", "copy:copyGalleryImgs"]);
+
+	grunt.registerTask("default", ["uglify:deploymentJS", "cssmin:main", "replace:refMin", "copy:copyGalleryItems", "imagemin:galleryImgs"]);
 };

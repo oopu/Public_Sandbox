@@ -38,6 +38,7 @@ h1, h2, h3{
 	text-decoration: none;
 	font-size: inherit;
 }
+#homeLink h1{ display: inline; }
 
 @media (min-width: 768px){
 
@@ -123,7 +124,6 @@ a:visited{
 a:visited:hover, a:visited:focus{
 	color: rgb(139, 193, 235);
 }
-
 nav ul li p{
 	margin: 0.5em 0 0em 0.5em;
 	color: rgb(206, 220, 231);
@@ -144,12 +144,24 @@ section p{
 	margin: 0 auto;
 	background-color: rgb(92, 99, 103);
 }
-
 .imgContainer img{
 	max-width: 100%;
 	display: block;
 	margin: 0 auto;
 }
+
+a.clickPanel{
+	text-decoration: none;
+	font-size: inherit;
+	color: inherit;
+}
+a.clickPanel div{	
+	-webkit-transition: background-color 400ms;
+	transition: background-color 400ms;
+}
+a.clickPanel abbr{ text-decoration: underline; }
+a.clickPanel div:hover, a.clickPanel:focus div{ background-color: rgba(139, 193, 235, 0.3); }
+a.clickPanel div:hover p, a.clickPanel:focus div p{ color: black; }
 
 footer{
 	text-align: center;
@@ -167,6 +179,7 @@ footer{
 .padded{ padding: 1.3em; }
 .h-padded{ padding: 0 1.3em; }
 .v-padded{ padding: 1.3em 0; }
+.minHeight30{ min-height: 30rem; }
 
 /*------- Animated effects ---------*/
 
