@@ -1,0 +1,79 @@
+#navList { font-family: sans-serif; }
+#navList .header {
+	margin: 0;
+	padding: 1.5rem 0 0.5rem 1px;
+	width: 15rem;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-left: 1px solid rgb(40, 40, 40);
+}
+#navList .header h1 {
+	text-transform: uppercase;
+	font-size: 1.75rem;
+	letter-spacing: 0.3rem;
+	margin: 0;
+	color: rgb(216, 100, 0);
+}
+#navList ul {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 15rem;
+	margin: 0;
+	padding-left: 0;
+	border: 1px solid rgb(40, 40, 40);
+}
+#navList li{
+	position: relative;
+	list-style-type: none;
+	border-bottom: 1px solid rgb(40, 40, 40);
+}
+#navList li a{ 
+	display: block;
+	padding: 0.5rem;
+
+	transition: background-color 400ms;
+	-o-transition: background-color 400ms;
+	-moz-transition: background-color 400ms;
+	-webkit-transition: background-color 400ms;
+}
+#navList li a i{
+	color: rgb(119, 61, 25);
+	float: right;
+}
+#navList li a:link{
+	
+	color: rgb(216, 100, 0);
+	text-decoration: none;
+}
+/* Doesn't highlight... maybe I can come back to this later =(
+#navList li a:link:before{
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	color: rgb(119, 61, 25);
+	text-decoration: none;
+	content: "\f054";
+	float: right;
+	display: inline-block;
+}
+#navList li a:link:before:hover, #navList li a:link:before:focus{
+	color: rgb(242, 228, 207);
+}*/
+#navList li a:hover, #navList li a:focus, #navList li a:hover i, #navList li a:focus i{
+	color: rgb(242, 228, 207);
+	background-color: rgba(0, 0, 0, 1);
+}
+
+/* And for nested lists...*/
+
+#navList li ul { 
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 100%;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+/*Note that you can't show the submenus with the keyboard because the li's are not focusable.
+* This would need some JavaScript action, which I think is beyond the scope of the test.
+*/
+#navList li:hover>ul { display: block;}
