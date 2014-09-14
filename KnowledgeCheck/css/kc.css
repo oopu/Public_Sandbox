@@ -1,5 +1,5 @@
 ﻿body { padding: 1rem; }
-.kc { max-width: 66rem; }
+.kc { max-width: 66rem; margin-bottom: 1rem; }
 /* Replaced this styling with uikit's uk-panel-title default styling
 .kc .content>p { font-weight: bold; }
 */

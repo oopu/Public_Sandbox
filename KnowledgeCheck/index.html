@@ -9,7 +9,7 @@
     <body>
         <h1>Knowledge Check</h1>
                 
-        <div id="endQuestion" class="kc">
+        <div id="multiSelect" class="kc">
             <div class="content">
                 <p>Which of the following are real pokemon? <em>Select all that apply.</em></p>
                 <ul class="distractorsContainer" role="form">
@@ -59,6 +59,65 @@
             <h4 class="maxFails feedback">Not quite. The correct answer selection has been made for you. Please review before continuing.</h4>
         </div>
 
+        <div id="singleSelect" class="kc">
+            <div class="content">
+                <p>Which one of the following is a real pokemon?</p>
+                <ul class="distractorsContainer" role="form">
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Ganondorf</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Lt. Surge</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Pumbloom</p>
+                        </label>
+                    </li>
+                    <li>
+                       <label>
+                            <input name="distractors" class="correct" type="radio"/>
+                            <p>Gligar</p>
+                            <p class="feedback">Gligar is #207 in the Pokedex.</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Gleegore</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>Dameon</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="distractors" type="radio"/>
+                            <p>MATT DAMON</p>
+                            <p class="feedback">MATT DAMON!</p>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="feedbackArea" role="status">
+                <!--To be populated with JS by the items marked with the "feedback" class above. -->
+            </div>
+            <!-- Generic feedback. Displayed by default unless this is a 2-distractor quiz. Normally hidden -->
+            <h4 class="allCorrect feedback">Good job!</h4>
+            <h4 class="incorrect feedback">Not quite. Please check your selection and try again.</h4>
+            <h4 class="maxFails feedback">Not quite. The correct answer selection has been made for you. Please review before continuing.</h4>
+        </div>
+
         <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
         <!--[if gte IE 9]><!--><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
         <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
@@ -67,7 +126,8 @@
         <script>
             $(function() {
 
-                $(".kc").kc();
+                $("#multiSelect").kc();
+                $("#singleSelect").kc();
             });
         </script>
     </body>
