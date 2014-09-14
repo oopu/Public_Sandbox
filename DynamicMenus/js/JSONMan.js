@@ -10,7 +10,7 @@ var JSONMan = (function (){
 	/** Function to initiate the HTTP request. Called on init.
 	* Inputs: 
 	*	- callbackFn (function): Callback function to be called upon successful return of the object.
-	*	Note that this currently loads synchronously due to the conditions of the test, making use of the callback function a little unnecessary.
+	*	Note that this currently loads synchronously due to the way this demo uses it, making use of the callback function a little unnecessary.
 	*/
 	var loadJSON = function (callbackFn){
 

@@ -78,6 +78,6 @@
 	margin-left: -1px;
 }
 /*Note that you can't show the submenus with the keyboard because the li's are not focusable.
-* This would need some JavaScript action, which I think is beyond the scope of the test.
+* This would need some JavaScript action.
 */
 #navList li:hover>ul { display: block;}
