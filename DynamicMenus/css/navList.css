@@ -8,6 +8,7 @@
 }
 #navList .header h1 {
 	text-transform: uppercase;
+	text-align: center;
 	font-size: 1.75rem;
 	letter-spacing: 0.3rem;
 	margin: 0;
