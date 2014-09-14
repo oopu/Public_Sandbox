@@ -149,7 +149,11 @@
 
                 $("#multiSelect").kc();
                 $("#singleSelect").kc();
-                $("#TF").kc();
+                $("#TF").kc({
+                    callbackFxn: function (){
+                        $("#TF").after("<p><i>Yeah, but he's really weird, isn't he?</i></p>");
+                    }
+                });
             });
         </script>
     </body>

@@ -11,6 +11,7 @@
 		*				If this is true and there are < 3 distractors, the quiz will behave as though the correct answer was chosen regardless of choice selected.
 		*				This is false by default for compatibility with older implementations.
 		*	- maxAttempts = Integer that manually sets the maximum number of attempts before the quiz is considered failed and ends. This number is '3' by default.
+		*	- callbackFxn = Function to be called when the quiz is completed.
 		*/
 	$.fn.kc = function (options){
 
@@ -19,6 +20,7 @@
 		var checkTF = false;
 		var multiSelect = false;
 		var failCount = 0;
+		var callbackFn = function (){};
 
 		var MAX_FAILS = 3;
 		var CLEAR_ANSWERS_LABEL = "Clear Selected";
@@ -204,8 +206,6 @@
 		};
 		
 		var completeQuiz = function (){
-
-			//call callbackfxn
 			
 			$whichQuiz.find(".clearAnswersBtn").off("click").prop("disabled", true);
 
@@ -214,6 +214,8 @@
 				.find("input, button")
 					.attr("aria-disabled", "true")
 					.attr("disabled", "true");
+
+			callbackFn();
 		};
 
 		var simplerInputHandler = function (e){
@@ -360,28 +362,14 @@
 			checkTF = options.isTF || false;
 			multiSelect = options.isMulti || false;
 			
-			/*
-			if(options.quizID !== undefined){
-				$whichQuiz = $(options.quizID)
-			}
-			else {
-				$whichQuiz = $(".kc").eq(0);	
-			} 
-			*/
-
 			if(options.maxAttempts){
 				MAX_FAILS = options.maxAttempts;
 			}
+			if(options.callbackFxn){
+				callbackFn = options.callbackFxn;
+			}
 		}
-		else{
-			checkTF = false;
-			multiSelect = false;
-			//$whichQuiz = $(".kc").eq(0);
-		}
-		
-		//console.log("This quiz: " + $whichQuiz.attr("id"));
-		//$distractors = $whichQuiz.find(".distractorsContainer");
-		
+
 		//Special case: check to see if actually should be multi-select just in case of user error
 		if(!checkTF && !multiSelect){
 			checkIfTF();
