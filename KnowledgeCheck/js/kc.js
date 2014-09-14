@@ -13,9 +13,7 @@ var kc = (function (){
 	var MAX_FAILS = 3;
 	var CLEAR_ANSWERS_LABEL = "Clear Selected";
 	var CHECK_ANSWERS_LABEL = "Submit Answer";
-	
-	pub.QUIZ_COMPLETE = "quiz_complete";
-	
+		
 	/** Helper function to automatically add all the UIKit classes to the DOM elements of this quiz. Keeps template simple.
 	*	Called upon init()
 	*/
@@ -197,7 +195,7 @@ var kc = (function (){
 	
 	var completeQuiz = function (){
 
-		parent.$("body").trigger("FEYE.activityComplete");
+		//call callbackfxn
 		
 		$whichQuiz.find(".clearAnswersBtn").off("click").prop("disabled", true);
 
@@ -212,8 +210,6 @@ var kc = (function (){
 		
 		e.preventDefault();
 			
-		console.log("Checking single answer");
-
 		$distractors.find("button").removeClass("clickedBtn");
 		if($(this).is("button")){ $(this).addClass("clickedBtn"); }
 		
@@ -306,7 +302,7 @@ var kc = (function (){
 			if($thisDistractor.is(":checked") && $thisDistractor.hasClass("correct")){
 				//console.log("This one was selected and was correct!");
 				
-				$thisDistractor.before("<i class='fa fa-check'></i>");
+				$thisDistractor.before("<i class='uk-icon-check'></i>");
 			}
 			else if( ($thisDistractor.is(":checked")) || (!$thisDistractor.is(":checked") && $thisDistractor.hasClass("correct")) ) {
 				//console.log("This one was selected and wasn't correct, or this one wasn't selected and WAS correct.");
@@ -314,7 +310,7 @@ var kc = (function (){
 				if(!$thisDistractor.hasClass("correct")){
 
 					//Otherwise, this would always give people the answers without any thought.
-					$thisDistractor.before("<i class='fa fa-times'></i>");	
+					$thisDistractor.before("<i class='uk-icon-times'></i>");	
 				}
 				
 				allTrue = false;
